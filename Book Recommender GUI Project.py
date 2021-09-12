@@ -186,7 +186,7 @@ frame7.place(x = 40, y = 285)
 # pw.add(frame3)
 
 #Labels
-label2 = tk.Label(window, text = 'Name:', font = 'Verdana 10',fg = 'black', wraplength = 200)
+label2 = tk.Label(window, text = 'Title:', font = 'Verdana 10',fg = 'black', wraplength = 200)
 label2.place(x = 230, y = 95)
 
 label3 = tk.Label(window, text = 'Author:', font = 'Verdana 10', fg = 'black', wraplength = 50)
