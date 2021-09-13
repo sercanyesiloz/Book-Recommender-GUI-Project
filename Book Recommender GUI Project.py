@@ -63,7 +63,7 @@ print(df.shape)
 def find_book(book_title):
     
     seq = pd.DataFrame({'book': [i for i in df['book_title'].unique()],
-                       'ratio': [SequenceMatcher(None, book_title, i.lower()). \
+                       'ratio': [SequenceMatcher(None, book_title.lower(), i.lower()). \
                                  ratio() for i in df['book_title'].unique()]}). \
     sort_values('ratio', ascending = False)
     
